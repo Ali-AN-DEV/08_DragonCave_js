@@ -1,14 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang = "es">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>RPG - Ahuyenador de Dragones</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <script src="_.js" async defer></script>
+        <div id = "game">
+            <div id = "stats">
+                <span class="stat">XP: <strong><span class="xpText">0</span></strong></span>
+                <span class="stat">Vida: <strong><span class="healthText">100</span></strong></span>
+                <span class="stat">Oro: <strong><span class="goldText">50</span></strong></span>
+            </div>
+            <div id="controls">
+                <button id="button1">Go to store</button>
+                <button id="button2">Go to cave</button>
+                <button id="button3">Fight dragon</button>
+            </div>
+            <div id="monsterStats">
+                <span class="stat">Monster Name: <strong><span id="monsterName"></span></strong></span>
+                <span class="stat">Health: <strong><span id="monsterHealth"></span></strong></span>
+            </div>
+            <div id="text">
+                Bienvenido, debes derrotar al dragón que impide el poder salir de la aldea. Estás en la plaza central, a donde quieres ir? Utiliza los botones de arriba. 
+            </div>
+        </div>
+        <script src="rpgDragon.js" async defer></script>
     </body>
 </html>
